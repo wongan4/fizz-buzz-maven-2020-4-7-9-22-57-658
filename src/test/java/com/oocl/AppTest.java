@@ -24,4 +24,10 @@ public class AppTest {
         fizzBuzz.say(3);
         assertEquals(fizzBuzz.getResult(), "fizz");
     }
+
+    @Test
+    public void should_result_be_fizz_when_say_multiple_of_five() {
+        fizzBuzz.say(5);
+        assertEquals(fizzBuzz.getResult(), "Buzz");
+    }
 }
