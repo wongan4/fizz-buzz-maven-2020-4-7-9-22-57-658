@@ -22,12 +22,18 @@ public class AppTest {
     @Test
     public void should_result_be_fizz_when_say_multiple_of_three() {
         fizzBuzz.say(3);
-        assertEquals(fizzBuzz.getResult(), "fizz");
+        assertEquals(fizzBuzz.getResult(), "Fizz");
     }
 
     @Test
     public void should_result_be_fizz_when_say_multiple_of_five() {
         fizzBuzz.say(5);
         assertEquals(fizzBuzz.getResult(), "Buzz");
+    }
+
+    @Test
+    public void should_result_be_fizz_when_say_multiple_of_five_and_three() {
+        fizzBuzz.say(15);
+        assertEquals(fizzBuzz.getResult(), "FizzBuzz");
     }
 }
